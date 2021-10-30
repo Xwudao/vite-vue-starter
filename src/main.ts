@@ -3,6 +3,8 @@ import App from './App.vue';
 import '@/assets/styles/app.scss';
 import router from '@/router';
 import { createPinia } from 'pinia';
+//iconify
+import '@purge-icons/generated'; // <-- This
 
 //pinia
 const pinia = createPinia();

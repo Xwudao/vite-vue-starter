@@ -1,6 +1,7 @@
 <script lang="ts" setup="setup">
   import useCounter from '@/store/useCounter';
   import { storeToRefs } from 'pinia';
+  import AppIcon from '@/components/common/AppIcon.vue';
 
   const counter = useCounter();
   const refCounter = storeToRefs(counter);
@@ -29,6 +30,14 @@
         <el-button type="primary" size="small" @click="$router.push({ name: 'Admin' })">
           To Admin
         </el-button>
+      </p>
+    </div>
+
+    <div class="iconify mt-4 w-96 mx-auto p-5 rounded border border-gray-300">
+      <div class="title font-bold text-left mb-3">Iconfiy:</div>
+      <p>
+        <app-icon icon="mdi:account-circle" />
+        <app-icon icon="ion:search" class="text-lg" />
       </p>
     </div>
   </div>

@@ -7,8 +7,11 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "@iconify/iconify": "^2.0.4",
+    "@iconify/json": "^1.1.421",
     "element-plus": "^1.1.0-beta.24",
     "pinia": "^2.0.0",
+    "vite-plugin-purge-icons": "^0.7.0",
     "vue": "^3.2.16",
     "vue-router": "4"
   },

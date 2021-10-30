@@ -3,7 +3,7 @@ import vue from '@vitejs/plugin-vue';
 import * as path from 'path';
 import Components from 'unplugin-vue-components/vite';
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers';
-
+import PurgeIcons from 'vite-plugin-purge-icons';
 import { minifyHtml, injectHtml } from 'vite-plugin-html';
 // https://vitejs.dev/config/
 const resolve = (p: string) => {
@@ -27,6 +27,14 @@ export default defineConfig({
         title: 'Vite Vue Starter',
         injectScript: '',
       },
+    }),
+    PurgeIcons({
+      /* PurgeIcons Options */
+      content: [
+        '**/*.html',
+        // '**/*.js',
+        '**/*.vue', // scan for .vue file as well
+      ],
     }),
   ],
 });
