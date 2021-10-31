@@ -39,7 +39,7 @@ the `ion:search` can find in two site above.
 
 # For React
 
--
+- https://github.com/Xwudao/react-starter-template
 
 # Image
 
