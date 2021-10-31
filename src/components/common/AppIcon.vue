@@ -11,4 +11,8 @@
   </span>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+  .iconify {
+    color: #303133;
+  }
+</style>
